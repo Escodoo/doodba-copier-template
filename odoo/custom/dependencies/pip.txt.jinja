@@ -1,6 +1,92 @@
 git+https://github.com/OCA/openupgradelib.git@master
 unicodecsv
 unidecode{% if odoo_version < 11.0 %}<1.3.0{% endif %}
-{% if odoo_version < 11.0 -%}
-pathlib
-{% endif -%}
+
+#l10n-brazil
+email-validator
+erpbrasil.assinatura>=1.7.0
+erpbrasil.base>=2.3.0
+erpbrasil.edoc
+erpbrasil.edoc.pdf
+erpbrasil.transmissao
+nfelib>=2.0.0
+nfselib.ginfes
+nfselib.paulistana
+num2words
+phonenumbers
+pycep_correios
+pyyaml
+satcomum
+workalendar
+
+# others
+cryptography>=41.0.2
+signxml<3.1.0
+pyOpenSSL>=23.2.0
+pytz==2023.3
+pdfminer.six
+psycopg2-binary
+git+https://github.com/ATSTI/python-sped
+xmldiff
+ofx
+
+# account-financial-tools
+numpy-financial<=1.0.0
+numpy>=1.15
+
+# bank-statement-import
+chardet
+ofxparse
+xlrd
+
+# oca/res-framework
+a2wsgi
+apispec>=4.0.0
+cerberus
+extendable-pydantic
+extendable-pydantic>=0.0.4
+extendable>=0.0.4
+fastapi
+graphene
+graphql_server
+jsondiff
+marshmallow
+marshmallow-objects>=2.0.0
+parse-accept-language
+pydantic<2
+pyquerystring
+python-multipart
+typing-extensions
+ujson
+
+# oca/field-service
+webcolors
+
+# oca/server-auth
+pyjwt
+pysaml2
+python-jose
+python-ldap
+zxcvbn
+
+# oca/server-tools
+# generated from manifests external_dependencies
+acme
+astor
+contextvars; python_version < '3.7'
+dataclasses
+dnspython
+josepy
+odoorpc
+openpyxl
+pygount
+pysftp
+sentry_sdk<=1.9.0
+
+# oca/geospatial
+geojson
+shapely
+simplejson
+
+# oca/connector
+cachetools
