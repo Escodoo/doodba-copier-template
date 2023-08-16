@@ -107,7 +107,7 @@ _migrations:
 odoo_version:
   help: On which odoo version is it based?
   type: float
-  default: 16.0
+  default: 14.0
   choices:
     - 7.0
     - 8.0
@@ -352,7 +352,7 @@ cidr_whitelist:
     ⚠️ It must be a list. And this is only supported if you deploy with Traefik 2+.
 
 postgres_version:
-  default: "15"
+  default: "13"
   help: >-
     Which PostgreSQL version do you want to deploy? (Recommended: for new instances
     always use the latest version. Version 9.6 has no backup support.)

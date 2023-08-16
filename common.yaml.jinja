@@ -113,3 +113,7 @@ services:
       - backup_cache:/root:z
       - filestore:/mnt/backup/src/odoo:z
   {%- endif %}
+
+  boleto_cnab_api:
+    build:
+      context: ./boleto_cnab_api

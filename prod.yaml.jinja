@@ -101,6 +101,14 @@ services:
       {%- endif %}
   {%- endif %}
 
+  boleto_cnab_api:
+    extends:
+      file: common.yaml
+      service: boleto_cnab_api
+    networks:
+      default:
+    restart: unless-stopped
+
 networks:
   default:
     driver_opts:
