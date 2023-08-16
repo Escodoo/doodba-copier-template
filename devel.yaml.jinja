@@ -124,6 +124,15 @@ services:
       TARGET: {{ host }}
       PRE_RESOLVE: 1
 {% endfor %}
+
+  boleto_cnab_api:
+    extends:
+      file: common.yaml
+      service: boleto_cnab_api
+    networks: *public
+    ports:
+      - "127.0.0.1:9292:9292"
+
 networks:
   default:
     internal: ${DOODBA_NETWORK_INTERNAL-true}

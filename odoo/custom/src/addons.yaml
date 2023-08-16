@@ -1,0 +1,196 @@
+account-analytic:
+  - "*"
+
+account-budgeting:
+  - "*"
+
+account-financial-reporting:
+  - "*"
+
+account-financial-tools:
+  - "*"
+
+account-invoice-reporting:
+  - "*"
+
+account-invoicing:
+  - "*"
+
+account-payment:
+  - "*"
+
+account-reconcile:
+  - "*"
+
+bank-payment:
+  - "*"
+
+bank-statement-import:
+  - "*"
+
+brand:
+  - "*"
+
+commission:
+  - "*"
+
+connector:
+  - "*"
+
+contract:
+  - "*"
+
+crm:
+  - "*"
+
+currency:
+  - "*"
+
+delivery-carrier:
+  - "*"
+
+e-commerce:
+  - "*"
+
+field-service:
+  - "*"
+
+fleet:
+  - "*"
+
+geospatial:
+  - "*"
+
+helpdesk:
+  - "*"
+
+hr:
+  - "*"
+
+hr-expense:
+  - "*"
+
+knowledge:
+  - "*"
+
+l10n-brazil:
+  - "*"
+
+maintenance:
+  - "*"
+
+management-system:
+  - "*"
+
+manufacture:
+  - "*"
+
+mis-builder:
+  - "*"
+
+mis-builder-contrib:
+  - "*"
+
+partner-contact:
+  - "*"
+
+product-attribute:
+  - "*"
+
+project:
+  - "*"
+
+purchase-workflow:
+  - "*"
+
+queue:
+  - "*"
+
+reporting-engine:
+  - "*"
+
+rest-framework:
+  - "*"
+
+sale-reporting:
+  - "*"
+
+sale-workflow:
+  - "*"
+
+server-auth:
+  - "*"
+
+server-backend:
+  - "*"
+
+server-brand:
+  - "*"
+
+server-env:
+  - "*"
+
+server-tools:
+  - "*"
+
+server-ux:
+  - "*"
+
+social:
+  - "*"
+
+stock-logistics-warehouse:
+  - "*"
+
+stock-logistics-workflow:
+  - "*"
+
+timesheet:
+  - "*"
+
+web:
+  - "*"
+
+website:
+  - "*"
+
+---
+# Escodoo Repositories
+ENV:
+  DEFAULT_REPO_PATTERN: https://github.com/escodoo/{}.git
+account-addons:
+  - "*"
+base-addons:
+  - "*"
+purchase-addons:
+  - "*"
+
+# # # ats-odoo:
+# # #   defaults:
+# # #     depth: $DEPTH_MERGE
+# # #   merges:
+# # #   - origin $ODOO_VERSION
+# # #   remotes:
+# # #     origin: https://github.com/marcelsavegnago/ats-odoo
+# # #   target: origin $ODOO_VERSION
+
+---
+# Engenere Repositories
+ENV:
+  DEFAULT_REPO_PATTERN: https://github.com/engenere/{}.git
+engenere-addons:
+  - "*"
+
+---
+# Akretion Repositories
+ENV:
+  DEFAULT_REPO_PATTERN: https://github.com/akretion/{}.git
+account-move-import:
+  - "*"
+
+---
+# Odoo Repositories
+ENV:
+  DEFAULT_REPO_PATTERN: https://github.com/odoo/{}.git
+design-themes:
+  - "*"

@@ -126,6 +126,14 @@ services:
     command:
       - test -r /etc/mailhog/auth && export MH_AUTH_FILE=/etc/mailhog/auth; exec MailHog
 
+  boleto_cnab_api:
+    extends:
+      file: common.yaml
+      service: boleto_cnab_api
+    networks:
+      default:
+    restart: unless-stopped
+
 networks:
   default:
     internal: ${DOODBA_NETWORK_INTERNAL-true}

@@ -14,3 +14,22 @@
     - ocb $ODOO_VERSION
     # Example of a merge of the PR with the number <PR>
     # - oca refs/pull/<PR>/head
+
+l10n-brazil:
+  defaults:
+    depth: $DEPTH_MERGE
+  merges:
+    - origin $ODOO_VERSION
+    - origin refs/pull/1887/head # Escodoo:14.0-mig-l10n_br_fiscal_queue
+    - origin refs/pull/2033/head # Escodoo:14.0-fix-l10n_br_base-problem-when-change-state-or-inscr_est-fields
+    - origin refs/pull/1928/head # Escodoo:14.0-fix-l10n_br_nfse-inscr-estadual-isenta
+    - origin refs/pull/2362/head # Escodoo:14.0-l10n_br_fiscal_account-inss_reduction_manual
+    - origin refs/pull/2569/head # Escodoo:14.0-add-l10n_br_account_fleet
+    - origin refs/pull/2624/head # Escodoo:14.0-add-l10n_br_purchase_requisition
+    - origin refs/pull/2626/head # Escodoo:14.0-add-l10n_br_sale_blanket_order
+    - origin refs/pull/2627/head # Escodoo:14.0-imp-fiscal-message-on-nfse
+    - origin refs/pull/2628/head # Escodoo:14.0-imp-l10n_br_nfse_paulistana-fix-fonte-carga-estimada
+  remotes:
+    escodoo: https://github.com/Escodoo/l10n-brazil
+    origin: https://github.com/OCA/l10n-brazil
+  target: origin merged
