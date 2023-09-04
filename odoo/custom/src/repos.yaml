@@ -29,6 +29,7 @@ l10n-brazil:
     - origin refs/pull/2626/head # Escodoo:14.0-add-l10n_br_sale_blanket_order
     - origin refs/pull/2627/head # Escodoo:14.0-imp-fiscal-message-on-nfse
     - origin refs/pull/2628/head # Escodoo:14.0-imp-l10n_br_nfse_paulistana-fix-fonte-carga-estimada
+    - origin refs/pull/2672/head # kmee:fix/dfe_migration
   remotes:
     escodoo: https://github.com/Escodoo/l10n-brazil
     origin: https://github.com/OCA/l10n-brazil
