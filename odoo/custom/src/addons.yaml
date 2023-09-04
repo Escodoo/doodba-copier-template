@@ -91,6 +91,9 @@ mis-builder:
 mis-builder-contrib:
   - "*"
 
+payroll:
+  - "*"
+
 partner-contact:
   - "*"
 
@@ -155,24 +158,12 @@ website:
   - "*"
 
 ---
-# Escodoo Repositories
+# ATSTI Repositories
 ENV:
-  DEFAULT_REPO_PATTERN: https://github.com/escodoo/{}.git
-account-addons:
-  - "*"
-base-addons:
-  - "*"
-purchase-addons:
-  - "*"
-
-# # # ats-odoo:
-# # #   defaults:
-# # #     depth: $DEPTH_MERGE
-# # #   merges:
-# # #   - origin $ODOO_VERSION
-# # #   remotes:
-# # #     origin: https://github.com/marcelsavegnago/ats-odoo
-# # #   target: origin $ODOO_VERSION
+  DEFAULT_REPO_PATTERN: https://github.com/ATSTI/{}.git
+ats-odoo:
+  - l10n_br_sped_efd_contribuicoes
+  - l10n_br_sped_efd_icms_ipi
 
 ---
 # Engenere Repositories
@@ -193,4 +184,17 @@ account-move-import:
 ENV:
   DEFAULT_REPO_PATTERN: https://github.com/odoo/{}.git
 design-themes:
+  - "*"
+
+---
+# Escodoo Repositories
+ENV:
+  DEFAULT_REPO_PATTERN: https://github.com/escodoo/{}.git
+account-addons:
+  - "*"
+base-addons:
+  - "*"
+purchase-addons:
+  - "*"
+sale-addons:
   - "*"
