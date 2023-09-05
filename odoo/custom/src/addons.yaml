@@ -170,7 +170,9 @@ ats-odoo:
 ENV:
   DEFAULT_REPO_PATTERN: https://github.com/engenere/{}.git
 engenere-addons:
-  - "*"
+  - engenere_danfe
+  - l10n_br_base_allows_duplicate_cnpj_ie
+  - l10n_br_nfse_paulistana_direct_print
 
 ---
 # Akretion Repositories
