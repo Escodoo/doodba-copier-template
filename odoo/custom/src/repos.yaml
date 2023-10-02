@@ -24,7 +24,6 @@ l10n-brazil:
   merges:
     - origin $ODOO_VERSION
     - origin refs/pull/1887/head # Escodoo:14.0-mig-l10n_br_fiscal_queue
-    - origin refs/pull/2033/head # Escodoo:14.0-fix-l10n_br_base-problem-when-change-state-or-inscr_est-fields
     - origin refs/pull/1928/head # Escodoo:14.0-fix-l10n_br_nfse-inscr-estadual-isenta
     - origin refs/pull/2362/head # Escodoo:14.0-l10n_br_fiscal_account-inss_reduction_manual
     - origin refs/pull/2569/head # Escodoo:14.0-add-l10n_br_account_fleet
