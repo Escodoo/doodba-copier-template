@@ -165,20 +165,11 @@ base-addons:
 purchase-addons:
   - "*"
 
-# # # ats-odoo:
-# # #   defaults:
-# # #     depth: $DEPTH_MERGE
-# # #   merges:
-# # #   - origin $ODOO_VERSION
-# # #   remotes:
-# # #     origin: https://github.com/marcelsavegnago/ats-odoo
-# # #   target: origin $ODOO_VERSION
-
 ---
-# Engenere Repositories
+#  Repositories
 ENV:
-  DEFAULT_REPO_PATTERN: https://github.com/engenere/{}.git
-engenere-addons:
+  DEFAULT_REPO_PATTERN: https://github.com/ATSTI/{}.git
+ats-odoo:
   - "*"
 
 ---
